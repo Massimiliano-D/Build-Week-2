@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spotify - Album Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/album-style.css" />
+    <link rel="stylesheet" href="assets/css/aside.css" />
+    <link rel="stylesheet" href="assets/css/sidebar-sx.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  </head>
+
+  <body>
+    <div class="row h-100 w-100 m-0">
+      <div class="d-none d-lg-flex col-2 h-100 p-0 bg-black" id="nav-col">
+        <!-- header // sidebar sinistra -->
+        <nav>
+          <div class="row w-100 m-0">
+            <div class="col px-2 pt-2" id="nav">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"><i class="bi bi-three-dots text-white-50 me-3 fs-4"></i></a>
+                </li>
+                <li>
+                  <a href="./index.html" class="text-light text-decoration-none"
+                    ><i class="bi bi-house-door me-3 fs-4 text-white-50"></i>Home</a
+                  >
+                </li>
+                <li class="my-1">
+                  <a href="./search.html" class="text-light text-decoration-none"
+                    ><i class="bi bi-search me-3 fs-4 text-white-50"></i>Cerca</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none"
+                    ><i class="bi bi-collection-play me-3 fs-4"></i>La tua libreria</a
+                  >
+                </li>
+                <li class="mt-3">
+                  <a href="#" class="text-white-50 text-decoration-none"
+                    ><i class="bi bi-plus-square me-3 fs-4"></i>Crea playlist</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none"
+                    ><i class="bi bi-clipboard-heart text-primary me-3 fs-4"></i>Brani che ti piacciono</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white-50 text-decoration-none"
+                    ><i class="bi bi-bookmark text-success me-3 fs-4"></i>I tuoi episodi</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-12 border-top border-secondary bg-black text-white-50 p-2 position-relative"
+              id="sidebar-scroll"
+            >
+              <div class="d-flex flex-column">
+                <span>early strage emily syndrone (sett-ott 2022)</span>
+                <span>Be The Young</span>
+                <span>"..." cit.Kimiko (lug-ago 2022)</span>
+                <span>saggio vibes</span>
+                <span>main characters energy (mag-giu 2022)</span>
+                <span>that fucking mood</span>
+                <span>VEE, CARLOTTA E GIACOMO VANNO A BOSIO</span>
+                <span>An Emily Winchester king of mood</span>
+                <span>landing page (mar-apr 2022)</span>
+                <span>2021 lol</span>
+                <span>cosa cazzo vuol dire questa affermazione</span>
+                <span>honey and glass (nov-dic 2022)</span>
+                <span>(Revenge) Training Arc</span>
+                <span>Lidia & Emily</span>
+                <span>minecraft e nintendo switch (sep-oct 2021)</span>
+                <span>silvano d'orba? I hardly know her (lug-ago 2021)</span>
+                <span>Culo 2021</span>
+                <span>Frah Qiontale Mix</span>
+                <span>Francesco Guccini Mix</span><span>landing page (mar-apr 2022)</span>
+                <span>2021 lol</span>
+                <span>cosa cazzo vuol dire questa affermazione</span>
+                <span>honey and glass (nov-dic 2022)</span>
+                <span>(Revenge) Training Arc</span>
+                <span>Lidia & Emily</span>
+                <span>minecraft e nintendo switch (sep-oct 2021)</span>
+                <span>silvano d'orba? I hardly know her (lug-ago 2021)</span>
+                <span>Culo 2021</span>
+                <span>Frah Qiontale Mix</span>
+                <span>Francesco Guccini Mix</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col col-lg-8 h-100 p-0" id="main-col">
+        <main class="container-fluid custom-bg-album text-light">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex">
+              <div class="me-2 px-1 bg-dark rounded-5 pointer mt-2 mt-lg-0">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-arrow-left text-light"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                  />
+                </svg>
+              </div>
+              <div class="me-2 px-1 bg-dark rounded-5 pointer d-none d-lg-flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-arrow-right text-light"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown mt-1 d-none d-lg-flex">
+              <button
+                class="btn btn-dark dropdown-toggle rounded-5 ps-1 pe-2 d-flex align-items-center"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/imgs/main/image-1.jpg" class="ps-1 account-image rounded-5" />
+                <p class="m-0 ms-2">Team 1</p>
+              </button>
+              <ul class="dropdown-menu bg-dark">
+                <li>
+                  <a class="dropdown-item text-bg-dark" href="#">Account</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-bg-dark" href="#">Settings</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-bg-dark" href="#">Log out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="albumList" class="d-flex flex-column align-items-center flex-lg-row mt-4">
+            <!-- <img src="assets/imgs/search/image-50.jpg" class="big-album-image pointer" alt="" />
+            <div class="d-flex flex-column ms-4 w-100">
+              <h6 class="mb-3 d-none d-lg-flex">ALBUM</h6>
+              <h1 id="songTitle" class="fw-bold mb-3 pointer mt-3 mt-lg-0">Gioventù bruciata</h1>
+              <div class="d-flex align-items-center">
+                <p class="m-0 fw-bold">Pinguini tattici nucleari</p>
+                <span class="d-none d-lg-flex">&nbsp;-&nbsp;</span>
+                <p class="m-0 d-none d-lg-flex">2017</p>
+                <span class="d-none d-lg-flex">&nbsp;-&nbsp;</span>
+                <p class="m-0 fw-bold d-none d-lg-flex">12 brani</p>
+                <span class="d-none d-lg-flex">,&nbsp;</span>
+                <p class="m-0 d-none d-lg-flex">53 min 20 sec.</p>
+              </div>
+            </div> -->
+          </div>
+          <div class="mt-3 custom-bg-two py-3">
+            <h6 class="mb-3 d-lg-none text-white-50">ALBUM - 2017</h6>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <div class="bg-success px-2 py-2 rounded-5 pointer ms-2 me-4 d-none d-lg-flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="black"
+                    class="bi bi-play-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                    />
+                  </svg>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-heart me-4 pointer"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-cloud-arrow-down me-4 pointer"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"
+                  />
+                  <path
+                    d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"
+                  />
+                </svg>
+                <i class="bi bi-three-dots"></i>
+              </div>
+              <div>
+                <i class="bi bi-shuffle fs-1 text-success d-lg-none me-3"></i>
+                <i class="bi bi-play-circle-fill fs-1 text-success d-lg-none me-2"></i>
+              </div>
+            </div>
+            <div class="row w-100 mx-0 mt-4">
+              <div class="col col-7 p-0 px-2">
+                <p class="m-0 text-secondary mb-4 d-none d-lg-flex"># TITOLO</p>
+              </div>
+              <div class="col col-3 p-0 px-2 text-secondary d-flex flex-column align-items-end">
+                <p class="m-0 text-secondary mb-4 d-none d-lg-flex">RIPRODUZIONI</p>
+              </div>
+              <div class="col col-2 p-0 px-2 d-flex flex-column align-items-end">
+                <i class="bi bi-clock-history text-secondary mb-4 d-none d-lg-flex"></i>
+              </div>
+            </div>
+            <div id="tracks-list" class="d-flex flex-column">
+              <div class="row w-100 mx-0 mb-2 mt-1">
+                <!-- <div class="col-7 p-0 px-2">
+                  <div class="d-flex align-items-center">
+                    <p class="m-0 text-secondary fs-5">1</p>
+                    <div class="d-flex flex-column ms-3">
+                      <h6 class="m-0">Montanelli - Intro</h6>
+                      <p class="m-0 text-secondary">Pinguini Tattici Nucleari</p>
+                    </div>
+                  </div> 
+                </div> 
+                <div class="col-3 px-2 text-secondary d-flex flex-column align-items-end">
+                  <p class="m-0 text-secondary d-none d-lg-flex">694.578</p>
+                </div>
+                <div class="col-2 p-0 px-2 d-flex flex-column align-items-end">
+                  <i class="bi bi-three-dots-vertical d-lg-none text-white-50 me-2"></i>
+                  <p class="m-0 text-secondary d-none d-lg-flex">1:28</p>
+                </div> -->
+              </div>
+
+              <!-- <div class="row w-100 mx-0 mb-2 mt-1">
+                <div class="col-7 p-0 px-2">
+                  <div class="d-flex align-items-center">
+                    <p class="m-0 text-secondary fs-5">2</p>
+                    <div class="d-flex flex-column ms-3">
+                      <h6 class="m-0">Sciare</h6>
+                      <p class="m-0 text-secondary">Pinguini Tattici Nucleari</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3 p-0 px-2 text-secondary d-flex flex-column align-items-end">
+                  <p class="m-0 text-secondary d-none d-lg-flex">5.585.178</p>
+                </div>
+                <div class="col-2 p-0 px-2 d-flex flex-column align-items-end">
+                  <i class="bi bi-three-dots-vertical d-lg-none text-white-50 me-2"></i>
+                  <p class="m-0 text-secondary d-none d-lg-flex">4:41</p>
+                </div>
+              </div>-->
+            </div>
+          </div>
+        </main>
+      </div>
+      <aside class="d-none d-lg-flex col-2 p-0 bg-black text-white" id="aside-col">
+        <!-- aside // sidebar destra -->
+        <div id="containerFriends" class="w-100">
+          <div class="container pt-3 pb-1 d-flex flex-column justify-content-between h-100">
+            <div class="row w-100 m-0">
+              <div class="col p-0 d-flex justify-content-between">
+                <h6 class="m-0">Attività amici</h6>
+                <div class="d-flex mb-3 align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-person-add pointer"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                    />
+                    <path
+                      d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"
+                    />
+                  </svg>
+                  <svg
+                    id="buttonFriends"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="21"
+                    fill="currentColor"
+                    class="bi bi-x ms-1 pointer"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mt-3">
+                <div class="row w-100 m-0">
+                  <div class="col-9 p-0 d-flex">
+                    <div class="col d-flex justify-content-start">
+                      <div>
+                        <img
+                          src="https://img.freepik.com/premium-vector/person-avatar-design_24877-38119.jpg?w=40"
+                          class="rounded-5"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="ms-2">
+                        <p class="mb-0">Jean-Paul Sartre</p>
+                        <p class="songs mb-0">Disclosure</p>
+                        <p class="songs mb-1">
+                          <svg
+                            class="me-2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-music-note-beamed"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"
+                            />
+                            <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+                          </svg>
+                          OMEN
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 p-0 d-flex justify-content-end time">
+                    <p>4 ore</p>
+                  </div>
+                </div>
+                <div class="row w-100 m-0 mt-2">
+                  <div class="col-9 p-0 d-flex">
+                    <div class="col d-flex justify-content-start">
+                      <div>
+                        <img
+                          src="https://img.freepik.com/premium-vector/person-avatar-design_24877-38127.jpg?w=40"
+                          class="rounded-5"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="ms-2">
+                        <p class="mb-0">Karl Marx</p>
+                        <p class="songs mb-0">Alter Bridge</p>
+                        <p class="songs mb-1">
+                          <svg
+                            class="me-2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-music-note-beamed"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"
+                            />
+                            <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+                          </svg>
+                          WATCH OVER YOU
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 p-0 d-flex justify-content-end time">
+                    <p>1 giorno</p>
+                  </div>
+                </div>
+                <div class="row w-100 m-0 mt-2">
+                  <div class="col-9 p-0 d-flex">
+                    <div class="col d-flex justify-content-start">
+                      <div>
+                        <img
+                          src="https://img.freepik.com/premium-vector/person-avatar-design_24877-38121.jpg?w=40"
+                          class="rounded-5"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="ms-2">
+                        <p class="mb-0">Adam Smith</p>
+                        <p class="songs mb-0">Fatima</p>
+                        <p class="songs mb-1">
+                          <svg
+                            class="me-2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="12"
+                            fill="currentColor"
+                            class="bi bi-music-note-beamed"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"
+                            />
+                            <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+                            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z" />
+                          </svg>
+                          BIGGEST JOKE OF ALL
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 p-0 d-flex justify-content-end time">
+                    <p>10 ore</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body-card">
+              <div class="special-card">
+                <div class="currentplaying">
+                  <svg
+                    height="50px"
+                    width="50px"
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="spotify"
+                  >
+                    <radialGradient
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(0 -534)"
+                      r="43.888"
+                      cy="572.064"
+                      cx="33.34"
+                      id="ipdIa4~cOclR8yt_ClW93a"
+                    >
+                      <stop stop-color="#f4e9c3" offset="0"></stop>
+                      <stop stop-color="#f8eecd" offset=".219"></stop>
+                      <stop stop-color="#fdf4dc" offset=".644"></stop>
+                      <stop stop-color="#fff6e1" offset="1"></stop>
+                    </radialGradient>
+                    <path
+                      d="M51.03,37.34c0.16,0.98,1.08,1.66,2.08,1.66h5.39c2.63,0,4.75,2.28,4.48,4.96	C62.74,46.3,60.64,48,58.29,48H49c-1.22,0-2.18,1.08-1.97,2.34c0.16,0.98,1.08,1.66,2.08,1.66h8.39c1.24,0,2.37,0.5,3.18,1.32	C61.5,54.13,62,55.26,62,56.5c0,2.49-2.01,4.5-4.5,4.5h-49c-1.52,0-2.9-0.62-3.89-1.61C3.62,58.4,3,57.02,3,55.5	C3,52.46,5.46,50,8.5,50H14c1.22,0,2.18-1.08,1.97-2.34C15.81,46.68,14.89,44,13.89,44H5.5c-2.63,0-4.75-2.28-4.48-4.96	C1.26,36.7,3.36,35,5.71,35H8c1.71,0,3.09-1.43,3-3.16C10.91,30.22,9.45,29,7.83,29H4.5c-2.63,0-4.75-2.28-4.48-4.96	C0.26,21.7,2.37,20,4.71,20H20c0.83,0,1.58-0.34,2.12-0.88C22.66,18.58,23,17.83,23,17c0-1.66-1.34-3-3-3h-1.18	c-0.62-0.09-1.43,0-2.32,0h-9c-1.52,0-2.9-0.62-3.89-1.61S2,10.02,2,8.5C2,5.46,4.46,3,7.5,3h49c3.21,0,5.8,2.79,5.47,6.06	C61.68,11.92,60.11,14,57.24,14H52c-2.76,0-5,2.24-5,5c0,1.38,0.56,2.63,1.46,3.54C49.37,23.44,50.62,24,52,24h6.5	c3.21,0,5.8,2.79,5.47,6.06C63.68,32.92,61.11,35,58.24,35H53C51.78,35,50.82,36.08,51.03,37.34z"
+                      fill="url(#ipdIa4~cOclR8yt_ClW93a)"
+                    ></path>
+                    <linearGradient
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(0 -534)"
+                      y2="590.253"
+                      y1="530.096"
+                      x2="32"
+                      x1="32"
+                      id="ipdIa4~cOclR8yt_ClW93b"
+                    >
+                      <stop stop-color="#42d778" offset="0"></stop>
+                      <stop stop-color="#3dca76" offset=".428"></stop>
+                      <stop stop-color="#34b171" offset="1"></stop>
+                    </linearGradient>
+                    <path
+                      d="M57,32c0,12.837-9.663,23.404-22.115,24.837C33.942,56.942,32.971,57,32,57	c-1.644,0-3.25-0.163-4.808-0.471C15.683,54.298,7,44.163,7,32C7,18.192,18.192,7,32,7S57,18.192,57,32z"
+                      fill="url(#ipdIa4~cOclR8yt_ClW93b)"
+                    ></path>
+                    <path
+                      d="M41.683,44.394c-0.365,0-0.731-0.181-1.096-0.365c-3.471-2.009-7.674-3.105-12.24-3.105	c-2.559,0-5.116,0.364-7.491,0.912c-0.365,0-0.914,0.183-1.096,0.183c-0.914,0-1.461-0.732-1.461-1.462	c0-0.913,0.547-1.463,1.279-1.643c2.923-0.732,5.846-1.096,8.951-1.096c5.116,0,9.866,1.276,13.885,3.655	c0.548,0.364,0.914,0.73,0.914,1.642C43.145,43.847,42.414,44.394,41.683,44.394z M44.241,38.181c-0.547,0-0.912-0.18-1.279-0.364	c-3.835-2.375-9.135-3.839-15.163-3.839c-2.924,0-5.664,0.366-7.674,0.916c-0.549,0.18-0.731,0.18-1.096,0.18	c-1.096,0-1.827-0.912-1.827-1.826c0-1.096,0.549-1.645,1.461-2.009c2.74-0.73,5.481-1.279,9.317-1.279	c6.213,0,12.241,1.463,16.991,4.384c0.73,0.364,1.096,1.096,1.096,1.826C46.069,37.269,45.337,38.181,44.241,38.181z M47.165,30.876	c-0.548,0-0.731-0.182-1.279-0.364c-4.385-2.559-10.961-4.021-17.356-4.021c-3.289,0-6.577,0.366-9.5,1.096	c-0.366,0-0.731,0.182-1.279,0.182c-1.279,0.183-2.193-0.912-2.193-2.192c0-1.279,0.731-2.009,1.644-2.192	c3.471-1.096,7.125-1.462,11.327-1.462c6.943,0,14.25,1.462,19.731,4.567c0.73,0.366,1.278,1.096,1.278,2.193	C49.357,29.961,48.442,30.876,47.165,30.876z"
+                      fill="#fff"
+                    ></path>
+                  </svg>
+                  <p class="heading">Currently Playing</p>
+                </div>
+                <div class="loader mt-1" id="song-1">
+                  <div class="song">
+                    <p class="name my-0" id="badge-song"></p>
+                    <p class="artist my-0" id="badge-artist"></p>
+                  </div>
+                  <div class="albumcover bg-secondary"></div>
+                  <!-- <div class="loading">
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                    <div class="load"></div>
+                  </div> -->
+                  <div class="play"></div>
+                </div>
+                <div class="loader">
+                  <div class="song">
+                    <p class="name my-0">Uprising</p>
+                    <p class="artist my-0">Muse</p>
+                  </div>
+                  <div class="albumcover">
+                    <img
+                      class="w-100 rotate-180"
+                      src="https://e-cdns-images.dzcdn.net/images/cover/79845461299661387ade37f8e34d643c/250x250-000000-80-0-0.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="play"></div>
+                </div>
+                <div class="loader">
+                  <div class="song">
+                    <p class="name my-0">Albachiara</p>
+                    <p class="artist my-0">Vasco Rossi</p>
+                  </div>
+                  <div class="albumcover">
+                    <img
+                      class="w-100 rotate-180"
+                      src="https://e-cdns-images.dzcdn.net/images/cover/bf773d0c35f850652e5c0a0df93db7b7/250x250-000000-80-0-0.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="play"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="imgFriends"
+          class="d-flex justify-content-center rounded-5 w-100 align-items-start border-0 d-none mt-5"
+        >
+          <button class="rounded-5 bg-black border-0" id="buttonimgFriends">
+            <img
+              src="https://img.freepik.com/premium-vector/person-avatar-design_24877-38130.jpg?w=60"
+              class="align-self-center rounded-5"
+              alt="img"
+            />
+            <p class="text-light">Expand</p>
+          </button>
+        </div>
+      </aside>
+    </div>
+    <footer class="fixed-bottom bg-black text-light">
+      <div
+        class="container-fluid h-100 d-flex justify-content-between align-items-center d-none d-lg-flex"
+        id="dynamic-player"
+      >
+        <div class="d-flex align-items-center invisible">
+          <div class="d-flex align-items-center">
+            <img class="img-player" src="assets/imgs/main/image-10.jpg" alt="img" />
+            <div class="d-flex flex-column justify-content-center mx-3">
+              <h4 class="fs-6 m-0" id="footer-title">Fat Funny Friens</h4>
+              <span class="fs-6 m-0" id="footer-artist">Maddie Zahm</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <a href="#" class="text-light"><i class="bi bi-heart like"></i></a>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="d-flex align-items-center justify-content-center">
+            <i class="bi bi-shuffle mx-3 fs-4 text-success invisible"></i>
+            <i class="bi bi-skip-start-fill mx-3 fs-4 text-secondary"></i>
+            <i class="bi bi-pause-circle-fill text-secondary mx-3 fs-3 pointer"></i>
+
+            <i class="bi bi-skip-end-fill mx-3 fs-4 text-secondary"></i>
+            <i class="bi bi-arrow-clockwise mx-3 fs-4 text-success invisible"></i>
+          </div>
+          <div class="slider_container">
+            <div class="current-time text-secondary">--:--</div>
+            <input type="range" min="0" max="100" value="0" class="seek_slider bg-secondary" />
+            <div class="total-duration text-secondary">--:--</div>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <i class="bi bi-mic-fill mx-1 text-white-50"></i>
+          <i class="bi bi-list mx-1 text-white-50"></i>
+          <i class="bi bi-music-player mx-1 text-white-50"></i>
+          <label class="slider">
+            <input type="range" class="level" />
+            <svg
+              class="volume"
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="512"
+              height="512"
+              x="0"
+              y="0"
+              viewBox="0 0 24 24"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M18.36 19.36a1 1 0 0 1-.705-1.71C19.167 16.148 20 14.142 20 12s-.833-4.148-2.345-5.65a1 1 0 1 1 1.41-1.419C20.958 6.812 22 9.322 22 12s-1.042 5.188-2.935 7.069a.997.997 0 0 1-.705.291z"
+                  fill="currentColor"
+                  data-original="#000000"
+                ></path>
+                <path
+                  d="M15.53 16.53a.999.999 0 0 1-.703-1.711C15.572 14.082 16 13.054 16 12s-.428-2.082-1.173-2.819a1 1 0 1 1 1.406-1.422A6 6 0 0 1 18 12a6 6 0 0 1-1.767 4.241.996.996 0 0 1-.703.289zM12 22a1 1 0 0 1-.707-.293L6.586 17H4c-1.103 0-2-.897-2-2V9c0-1.103.897-2 2-2h2.586l4.707-4.707A.998.998 0 0 1 13 3v18a1 1 0 0 1-1 1z"
+                  fill="currentColor"
+                  data-original="#000000"
+                ></path>
+              </g>
+            </svg>
+          </label>
+          <i class="bi bi-arrows-angle-expand mx-2 text-white-50"></i>
+        </div>
+      </div>
+      <div class="d-lg-none d-flex justify-content-evenly mt-2" id="tabletContent">
+        <div class="col-4">
+          <div class="d-flex flex-column">
+            <i class="bi bi-house-door-fill fs-4 text-light align-self-center"></i>
+            <a href="#" class="text-light text-decoration-none fs-6 align-self-center">Home</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="d-flex flex-column">
+            <i class="bi bi-search fs-4 align-self-center text-light"></i>
+            <a href="./search.html" class="text-light text-decoration-none fs-6 align-self-center">Cerca</a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="d-flex flex-column">
+            <i class="bi bi-collection-play-fill fs-4 align-self-center text-light"></i>
+            <a href="#" class="text-light text-decoration-none fs-6 align-self-center">La tua libreria</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/album.js"></script>
+  </body>
+</html>

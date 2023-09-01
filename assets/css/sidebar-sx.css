@@ -1,0 +1,19 @@
+#sidebar-scroll {
+  position: relative;
+  overflow: auto;
+  margin-top: 300px;
+  height: calc(100vh - 380px);
+}
+#sidebar-scroll::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+#sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(80, 80, 80);
+}
+#nav {
+  position: fixed;
+  width: calc(16.66666667% + 0px);
+  top: 0;
+  z-index: 10;
+}
